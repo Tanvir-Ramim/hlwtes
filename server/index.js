@@ -1,6 +1,6 @@
 const express = require("express");
 const dotenv = require("dotenv");
-// const nodemon = require("nodemon");
+const nodemon = require("nodemon");
 const path = require("path");
 const { dbConnect } = require("./config/mongoDb");
 const cookieParser = require("cookie-parser");

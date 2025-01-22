@@ -1,0 +1,60 @@
+{
+  "name": "leave_management",
+  "version": "1.0.0",
+  "description": "own house project",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll",
+    "start": "nodemon index.js",
+    "dev": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WdJb101/leave_management"
+  },
+  "keywords": [
+    "wd24"
+  ],
+  "author": "Mahmudul Hasan <mmhasan045@gmail.com> (https://github.com/m45hasan,https://www.linkedin.com/in/mahmudul-hasan-519464253 )",
+  "contributors": [
+    "Mahmudul Hasan <mmhasan045@gmail.com> (https://github.com/m45hasan,https://www.linkedin.com/in/mahmudul-hasan-519464253 )"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WdJb101/leave_management/issues"
+  },
+  "homepage": "https://github.com/WdJb101/leave_management#readme",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^2.0.3",
+    "cookie": "^0.6.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "date-fns": "^3.6.0",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^5.0.0-beta.2",
+    "express-session": "^1.18.0",
+    "http-errors": "^2.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "memory-cache": "^0.2.0",
+    "moment-timezone": "^0.5.45",
+    "mongodb": "^6.5.0",
+    "mongoose": "^8.2.2",
+    "mongoose-paginate-v2": "^1.8.0",
+    "multer": "^1.4.5-lts.1",
+    "node-cache": "^5.1.2",
+    "nodemailer": "^6.9.13",
+    "nodemon": "^3.1.0",
+    "passport": "^0.7.0",
+    "passport-facebook": "^3.0.0",
+    "passport-google-oauth20": "^2.0.0",
+    "sslcommerz-lts": "^1.1.0",
+    "validator": "^13.11.0",
+    "vhost": "^3.0.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

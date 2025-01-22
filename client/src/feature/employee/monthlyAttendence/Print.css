@@ -1,0 +1,32 @@
+/* Ensure full-width layout for PDF download and center the content */
+@media print {
+  html,
+  body {
+    width: 95%; /* Full width */
+    height: 100%; /* Full height */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin: auto;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: #c2961c; /* Apply background color */
+  }
+
+  #invoiceToDownload {
+    width: 100%;
+    /* Set a max-width for the invoice content */
+    background-color: #d8a610; /* Background color for invoice */
+    padding: 20px; /* Optional padding for better presentation */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+  }
+
+  .hidden-print {
+    display: none;
+  }
+
+  /* Remove default browser header and footer */
+  @page {
+    margin: 0; /* Remove default margins */
+  }
+}

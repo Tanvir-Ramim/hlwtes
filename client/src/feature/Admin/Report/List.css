@@ -1,0 +1,52 @@
+@media print {
+  .printable {
+    width: 100%;
+    break-inside: avoid;
+    page-break-inside: avoid;
+    page-break-before: always;
+  }
+
+  .printable table,
+  .printable th,
+  .printable td {
+    background-color: #d3d3d3 !important; /* Darker background for printing */
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  th {
+    background-color: #e9edee !important; /* More visible background for table headers */
+    color: #01030a !important;
+    -webkit-print-color-adjust: exact;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f1f3f3 !important;
+    -webkit-print-color-adjust: exact;
+  }
+
+  /* Ensure table headers repeat on new pages */
+  thead {
+    display: table-header-group;
+  }
+
+  /* Avoid table rows breaking between pages */
+  tr {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Ensure header appears only on the first page */
+  .header-print {
+    display: block !important;
+    page-break-before: avoid;
+  }
+  @page {
+    margin: 20px; /* Apply 20px margin on all sides */
+  }
+
+  /* Ensure the logo and header repeat on each page */
+  .header-print + .header-print {
+    page-break-before: always;
+  }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Client Query</title>
+
+    <style>
+      .container {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+      }
+      .header {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      .content {
+        font-size: 16px;
+        line-height: 1.5;
+      }
+      .footer {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #555;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        New Message from <%= data.firstName %> <%= data.lastName %>
+      </div>
+      <div class="content">
+        <p><strong>First Name:</strong> <%= data.firstName %></p>
+        <p><strong>Last Name:</strong> <%= data.lastName %></p>
+        <p><strong>Email:</strong> <%= data.email %></p>
+        <p><strong>Mobile:</strong> <%= data.mobile %></p>
+        <p><strong>Message:</strong> <%= data.message %></p>
+      </div>
+      <div class="footer">
+        <p>This email was sent from your website contact form.</p>
+      </div>
+    </div>
+  </body>
+</html>

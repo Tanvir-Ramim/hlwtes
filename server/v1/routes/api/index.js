@@ -23,6 +23,6 @@ _.use("/attendance", attend);
 _.use("/report", report);
 _.use("/leave-apply", apply);
 _.use("/toil", toil);
-_.use("/departments", dept);
+_.use("/depertments", dept);
 
 module.exports = _;
